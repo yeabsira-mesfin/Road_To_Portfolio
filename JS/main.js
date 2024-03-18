@@ -45,5 +45,5 @@ const {firstName,lastName,address: {city}} = me;
 
 console.log(city)
 
-console.log(firstName)
-console.log(lastName)
+console.log(firstName);
+console.log(lastName);
