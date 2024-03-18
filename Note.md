@@ -22,4 +22,5 @@
 # Var is not used since it makes declares a global variable where it can be harmful in some cases.
 
 # JS values were represented as a type tag and was represented as null pointer (0x00 on most platforms)
+# In primitive dataypes, values are dircetly associated with memory. (sting,number,boolean...)
 # As a result, null had 0 as a type tag, hence the bogus typeof return value(refernce)
