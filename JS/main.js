@@ -22,29 +22,55 @@
 // console.log(fruits.indexOf('Apple'))
 // console.log(fruits)
 
-const me = {
-    firstName: 'Yeabsira',
-    lastName: 'Mesfin',
-    age: 30,
-    hobbies: ['Coding','Reading','Football'],
-    address: {
-        street: 'this',
-        city: 'is',
-        state: 'a secret'
-    }
-}
+// const me = {
+//     firstName: 'Yeabsira',
+//     lastName: 'Mesfin',
+//     age: 30,
+//     hobbies: ['Coding','Reading','Football'],
+//     address: {
+//         street: 'this',
+//         city: 'is',
+//         state: 'a secret'
+//     }
+// }
+
+// me.email = 'yabidesta@gmail.com';
 
 
+// console.log(me.hobbies[2])
+// console.log(` My address: ${me.address.street} ${me.address.city} ${me.address.state}`)
 
-console.log(me.hobbies[2])
-console.log(` My address: ${me.address.street} ${me.address.city} ${me.address.state}`)
+// // Destructuring
 
-// Destructuring
+// const {firstName,lastName,address: {city}} = me;
 
-const {firstName,lastName,address: {city}} = me;
+// console.log(city)
 
-console.log(city)
+// console.log(firstName + " " +lastName);
 
-console.log(firstName);
+// console.log(me)
+
+const doThis = [ 
+    {
+    id: 1,
+    text: 'Code',
+    isCoompleted: true
+   },
+    {
+    id: 2,
+    text: 'Exercise',
+    isCoompleted: true
+   },
+    {
+    id: 3,
+    text: 'Apply for scholarship',
+    isCoompleted: false
+   },
+]
+
+const doThisToJason = JSON.stringify(doThis)
+console.log(doThisToJason)
+console.log(doThis[2].text)
+
 
 
