@@ -130,8 +130,9 @@ const todoInstruction = doThis.filter(todo =>
 //     i++;
 // }
 
-while(i<10){
-    console.log(`While Loop Number ${i}`);
-    i++;
-}
+//while(i<10){
+//     console.log(`While Loop Number ${i}`);
+//     i++;
+// }
+
 
