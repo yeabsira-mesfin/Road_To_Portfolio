@@ -124,14 +124,14 @@ const todoInstruction = doThis.filter(todo =>
 
 // let i = 0;
 
-<<<<<<< HEAD
+
 // while(i<10){
 //     console.log(`While Loop Number ${i}`);
 //     i++;
 // }
-=======
+
 while(i<10){
     console.log(`While Loop Number ${i}`);
     i++;
 }
->>>>>>> ee398e0df243eeca85c7f6b26c244dbca675b89a
+
