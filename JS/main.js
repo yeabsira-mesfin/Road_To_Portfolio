@@ -50,27 +50,41 @@
 
 // console.log(me)
 
-const doThis = [ 
-    {
-    id: 1,
-    text: 'Code',
-    isCoompleted: true
-   },
-    {
-    id: 2,
-    text: 'Exercise',
-    isCoompleted: true
-   },
-    {
-    id: 3,
-    text: 'Apply for scholarship',
-    isCoompleted: false
-   },
-]
+// const doThis = [ 
+//     {
+//     id: 1,
+//     text: 'Code',
+//     isCoompleted: true
+//    },
+//     {
+//     id: 2,
+//     text: 'Exercise',
+//     isCoompleted: true
+//    },
+//     {
+//     id: 3,
+//     text: 'Apply for scholarship',
+//     isCoompleted: false
+//    },
+// ]
 
-const doThisToJason = JSON.stringify(doThis)
-console.log(doThisToJason)
-console.log(doThis[2].text)
+// const doThisToJason = JSON.stringify(doThis)
+// console.log(doThisToJason)
+// console.log(doThis[2].text)
 
 
 
+///For Loop
+
+for(let i = 0; i<10; i++){
+    console.log(`For Loop Number: ${i}`)
+}
+
+// While Loop
+
+let i = 0;
+
+while(i<10){
+    console.log(`While Loop Number ${i}`);
+    i++;
+}
