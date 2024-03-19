@@ -24,3 +24,4 @@
 # JS values were represented as a type tag and was represented as null pointer (0x00 on most platforms)
 # In primitive dataypes, values are dircetly associated with memory. (sting,number,boolean...)
 # As a result, null had 0 as a type tag, hence the bogus typeof return value(refernce)
+# We have to convert our JS to JASON format to send it to the the server.
