@@ -103,11 +103,11 @@ const doThis = [
 
 ///filter
 
-const todoInstruction = doThis.filter(todo => 
-    todo.isCoompleted ===true).map(todo=>
-        todo.text);
+// const todoInstruction = doThis.filter(todo => 
+//     todo.isCoompleted ===true).map(todo=>
+//         todo.text);
 
-    console.log(todoInstruction)
+//     console.log(todoInstruction)
 // const doThisToJason = JSON.stringify(doThis)
 // console.log(doThisToJason)
 // console.log(doThis[2].text)
@@ -136,3 +136,19 @@ const todoInstruction = doThis.filter(todo =>
 // }
 
 
+/// Statements
+
+const x = 20;
+const y = 10;
+if(x>5 || y>10){
+    console.log('X is greater than 10 or y is greater than 10');
+
+}else {
+    console.log('x is less than 10 or y is less than 10');
+}
+if(x>5 && y>10){
+    console.log('X is greater than 10 and y is greater than 10');
+
+}else {
+    console.log('x is less than 10 and y is less than 10');
+}
