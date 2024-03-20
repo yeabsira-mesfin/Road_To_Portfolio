@@ -138,17 +138,26 @@ const doThis = [
 
 /// Statements
 
-const x = 20;
-const y = 10;
-if(x>5 || y>10){
-    console.log('X is greater than 10 or y is greater than 10');
+// const x = 20;
+// const y = 10;
+// if(x>5 || y>10){
+//     console.log('X is greater than 10 or y is greater than 10');
 
-}else {
-    console.log('x is less than 10 or y is less than 10');
-}
-if(x>5 && y>10){
-    console.log('X is greater than 10 and y is greater than 10');
+// }else {
+//     console.log('x is less than 10 or y is less than 10');
+// }
+// if(x>5 && y>10){
+//     console.log('X is greater than 10 and y is greater than 10');
 
-}else {
-    console.log('x is less than 10 and y is less than 10');
-}
+// }else {
+//     console.log('x is less than 10 and y is less than 10');
+// }
+
+
+/// Ternary operator
+
+const x =20;
+
+const color = x>10? 'red':'blue';
+
+console.log(color)
