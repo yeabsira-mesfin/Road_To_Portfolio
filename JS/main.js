@@ -161,8 +161,26 @@ const doThis = [
 
 /// Ternary operator
 
-const x =20;
+// const x =20;
 
-const color = x>10? 'red':'blue';
+// const color = x>10? 'red':'blue';
 
-console.log(color)
+// console.log(color)
+
+/// switch
+
+const x = 7;
+
+const color = x >  5? 'red': 'blue';
+
+switch(color){
+    case 'red':
+        console.log('The color is red');
+        break;
+    case 'blue':
+        console.log('The color is blue');
+        break;
+        default:
+            console.log('color is NOT red or blue');
+            break;
+}
