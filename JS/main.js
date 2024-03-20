@@ -236,4 +236,4 @@ console.log(`${person2.firstName} ${person2.lastName} and I was born in ${person
 
 
 console.log(person1.getBirthYear())
-console.log(person2.getFullName())
+console.log(person2.getFullName());
