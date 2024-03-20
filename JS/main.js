@@ -69,6 +69,7 @@ const doThis = [
     isCoompleted: false
    },
 ]
+
 /// Iterating through object elements.
 
 /// for loop 
@@ -200,3 +201,14 @@ function addNums(num1= 4, num2 = 5){
 }
 
 console.log(addNums())
+
+/// another way of returning method called arrow function is shown below
+
+const addNumss = (num1,num2) => num1 + num2;
+
+console.log(addNumss(4,5))
+
+/// using it with an object
+
+const increasedId = doThis.forEach(todo => console.log(todo.id + 5));
+
