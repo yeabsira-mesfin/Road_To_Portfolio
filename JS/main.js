@@ -137,7 +137,6 @@ const doThis = [
 
 
 /// Statements
-
 const x = 20;
 const y = 10;
 if(x>5 || y>10){
