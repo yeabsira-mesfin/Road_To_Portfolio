@@ -169,18 +169,34 @@ const doThis = [
 
 /// switch
 
-const x = 7;
+// const x = 7;
 
-const color = x >  5? 'red': 'blue';
+// const color = x >  5? 'red': 'blue';
 
-switch(color){
-    case 'red':
-        console.log('The color is red');
-        break;
-    case 'blue':
-        console.log('The color is blue');
-        break;
-        default:
-            console.log('color is NOT red or blue');
-            break;
+// switch(color){
+//     case 'red':
+//         console.log('The color is red');
+//         break;
+//     case 'blue':
+//         console.log('The color is blue');
+//         break;
+//         default:
+//             console.log('color is NOT red or blue');
+//             break;
+// }
+
+/// functions
+
+function addNums(num1, num2){
+    return num1 + num2;
 }
+
+console.log(addNums(4,5))
+
+/// function with default values.
+
+function addNums(num1= 4, num2 = 5){
+    return num1 + num2;
+}
+
+console.log(addNums())
