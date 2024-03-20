@@ -188,27 +188,52 @@ const doThis = [
 
 /// functions
 
-function addNums(num1, num2){
-    return num1 + num2;
+// function addNums(num1, num2){
+//     return num1 + num2;
+// }
+
+// console.log(addNums(4,5))
+
+// /// function with default values.
+
+// function addNums(num1= 4, num2 = 5){
+//     return num1 + num2;
+// }
+
+// console.log(addNums())
+
+// /// another way of returning method called arrow function is shown below
+
+// const addNumss = (num1,num2) => num1 + num2;
+
+// console.log(addNumss(4,5))
+
+// /// using it with an object
+
+// const increasedId = doThis.map(todo => todo.id + 5);
+// console.log(increasedId)
+
+function Person(firstName, lastName,dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+    this.getBirthYear = function(){
+        return this.dob.getFullYear();
+    }
+    // this.getBirthYear = () =>{
+    //     return this.dob.getFullYear();
+    // }
+    this.getFullName = function(){
+        return `${this.firstName} ${this.lastName}`;
+    }
 }
 
-console.log(addNums(4,5))
+const person1 = new Person('Yeab', 'Mesfin','7-6-1999');
+const person2 = new Person('Soul', 'Aleme','7-1-1999');
 
-/// function with default values.
+console.log(`${person1.firstName} ${person1.lastName} and I was born in ${person1.dob}`)
+console.log(`${person2.firstName} ${person2.lastName} and I was born in ${person2.dob}`)
 
-function addNums(num1= 4, num2 = 5){
-    return num1 + num2;
-}
 
-console.log(addNums())
-
-/// another way of returning method called arrow function is shown below
-
-const addNumss = (num1,num2) => num1 + num2;
-
-console.log(addNumss(4,5))
-
-/// using it with an object
-
-const increasedId = doThis.forEach(todo => console.log(todo.id + 5));
-
+console.log(person1.getBirthYear())
+console.log(person2.getFullName())
