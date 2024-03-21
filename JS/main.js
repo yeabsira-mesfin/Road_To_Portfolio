@@ -213,32 +213,49 @@ const doThis = [
 // const increasedId = doThis.map(todo => todo.id + 5);
 // console.log(increasedId)
 
-function Person(firstName, lastName,dob){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob);
-    this.getBirthYear = function(){
-        return this.dob.getFullYear();
+// function Person(firstName, lastName,dob){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+//     this.getBirthYear = function(){
+//         return this.dob.getFullYear();
+//     }
+//     // this.getBirthYear = () =>{
+//     //     return this.dob.getFullYear();
+//     // }
+//     // this.getFullName = function(){
+//     //     return `${this.firstName} ${this.lastName}`;
+//     // }
+// }
+
+// Person.prototype.getFullName = function (){
+//     return `${this.firstName} ${this.lastName}`;
+// }
+
+// const person1 = new Person('Yeab', 'Mesfin','7-6-1999');
+// const person2 = new Person('Soul', 'Aleme','7-1-1999');
+
+// console.log(`${person1.firstName} ${person1.lastName} and I was born in ${person1.dob}`)
+// console.log(`${person2.firstName} ${person2.lastName} and I was born in ${person2.dob}`)
+
+/// Class
+
+class Person {
+    constructor(firstName, lastName,dob){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
     }
-    // this.getBirthYear = () =>{
-    //     return this.dob.getFullYear();
-    // }
-    // this.getFullName = function(){
-    //     return `${this.firstName} ${this.lastName}`;
-    // }
+        getFullName(){
+            return `${this.firstName} ${this.lastName}`;
+        }
+        getBirthYear(){
+            return this.dob.getFullYear();
+        }
+  
 }
-
-Person.prototype.getFullName = function (){
-    return `${this.firstName} ${this.lastName}`;
-}
-
 const person1 = new Person('Yeab', 'Mesfin','7-6-1999');
 const person2 = new Person('Soul', 'Aleme','7-1-1999');
-
-console.log(`${person1.firstName} ${person1.lastName} and I was born in ${person1.dob}`)
-console.log(`${person2.firstName} ${person2.lastName} and I was born in ${person2.dob}`)
-
-
 console.log(person1.getBirthYear());
 console.log(person2.getFullName());
 console.log(person1.getFullName());
