@@ -223,9 +223,13 @@ function Person(firstName, lastName,dob){
     // this.getBirthYear = () =>{
     //     return this.dob.getFullYear();
     // }
-    this.getFullName = function(){
-        return `${this.firstName} ${this.lastName}`;
-    }
+    // this.getFullName = function(){
+    //     return `${this.firstName} ${this.lastName}`;
+    // }
+}
+
+Person.prototype.getFullName = function (){
+    return `${this.firstName} ${this.lastName}`;
 }
 
 const person1 = new Person('Yeab', 'Mesfin','7-6-1999');
@@ -235,5 +239,6 @@ console.log(`${person1.firstName} ${person1.lastName} and I was born in ${person
 console.log(`${person2.firstName} ${person2.lastName} and I was born in ${person2.dob}`)
 
 
-console.log(person1.getBirthYear())
+console.log(person1.getBirthYear());
 console.log(person2.getFullName());
+console.log(person1.getFullName());
