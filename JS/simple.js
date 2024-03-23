@@ -37,7 +37,7 @@
 
 /// Golf code.
 
-function golfScore(par, stroke){
+export function golfScore(par, stroke){
     if(stroke == 1){
         return 'Hole-in-one';
     }
@@ -60,4 +60,5 @@ function golfScore(par, stroke){
         return 'Go home.'
     }
 }
-console.log(golfScore(2,4));
+// console.log(golfScore(2,4));
+
