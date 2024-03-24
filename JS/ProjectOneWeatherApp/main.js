@@ -14,7 +14,7 @@ async function checkWeather(city){
     else {
         let data = await response.json();
 
-        // console.log(data);
+        console.log(data);
         document.querySelector(".city").innerHTML = data.name;
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + '°C';
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
@@ -40,6 +40,9 @@ async function checkWeather(city){
         }
         else if(data.weather[0].main == "Snow"){
             weatherIcon.src = "images/snow.png";
+        }
+        else if(data.weather[0].main == "Thunderstorm"){
+            weatherIcon.src = "images/thunderstorm.png";
         };
     
         document.querySelector(".error").style.display = "none";
