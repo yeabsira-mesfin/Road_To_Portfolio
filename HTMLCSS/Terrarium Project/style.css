@@ -119,6 +119,7 @@ h1 {
     height: 400px;
     display: flex;
     color: green;
+    justify-content: sp;
    
 }
 .flexbox-item{
@@ -153,7 +154,10 @@ h1 {
     /* flex-grow: 1;
     flex-basis: 0; */
     flex: 1 0 0;
-    /* flex is the mix of flex-grow,flex-shrink and flex-basis where the first number is flex grow and the second is shrink and the third is basis. */
+    /* flex is the mix of flex-grow,flex-shrink and flex-basis where the first number is flex grow and the second is shrink and the third is basis.
+    The two properties flex-direction and flex-wrap are used so often together that the shorthand property flex-flow was created to combine them. 
+    This shorthand property accepts the value of the two properties separated by a space.
+    */
     align-self: flex-start;
     
     /* align-self is used for the box itself. */
