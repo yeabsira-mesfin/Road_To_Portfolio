@@ -22,7 +22,11 @@ function getTodos() {
   
   // PUT/PATCH REQUEST
   function updateTodo() {
-    console.log('PUT/PATCH Request');
+    axios.patch('https://jsonplaceholder.typicode.com/todos/1',{
+      title: 'Updated Todo',
+      completed: true
+  }).then(res => showOutput(res)).catch(err => console.error(err));
+
   }
   
   // DELETE REQUEST
