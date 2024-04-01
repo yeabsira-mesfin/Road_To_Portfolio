@@ -9,12 +9,15 @@ function getTodos() {
     // }).then(res => showOutput(res)).catch(err => console.error(err));
 
     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5').then(res => showOutput(res)).catch(err => console.error(err));
-    
+
   }
   
   // POST REQUEST
   function addTodo() {
-    console.log('POST Request');
+     axios.post('https://jsonplaceholder.typicode.com/todos',{
+        title: 'New Todo',
+        completed: false
+    }).then(res => showOutput(res)).catch(err => console.error(err));
   }
   
   // PUT/PATCH REQUEST
