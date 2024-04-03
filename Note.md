@@ -9,6 +9,7 @@
 
 
 # Three main methods are attached to HTTPS, GET (requests data), POST (submit data to the server), (PUT) update data which is already on the server, and DELETE(deletes our data.)
+# The main difference between put and patch is that put updates it entirely and patch updates incrementaly only the specified target.
 # Rarely used method are Head: same as get but doesn't return a body. Options: returns the supported HTTP methods. Patch: update partial resources.
 
 # 200 - means ok, 201 - ok created, 301 - moved to new URL, 304- means not modified, 400 - Bad request, 401 - unauthorized, 404 - not found and 500 internal server error

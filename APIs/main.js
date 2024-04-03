@@ -36,7 +36,10 @@ function getTodos() {
   
   // SIMULTANEOUS DATA
   function getData() {
-    console.log('Simultaneous Request');
+    axios.all([
+      axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5'),
+      axios.get('https://jsonplaceholder.typicode.com/posts?_limit=5')
+    ]).then(axios.spread((todos,posts)=>showOutput(posts))).catch(err => console.error(err));
   }
   
   // CUSTOM HEADERS
@@ -60,6 +63,14 @@ function getTodos() {
   }
   
   // INTERCEPTING REQUESTS & RESPONSES
+
+  axios.interceptors.request.use(config => {
+    console.log(`${config.method.toUpperCase()} request send to ${config.url} at ${new Date().getTime()}`)
+
+    return config
+  },error =>{
+    return Promise.reject(error);
+  })
   
   // AXIOS INSTANCES
   
