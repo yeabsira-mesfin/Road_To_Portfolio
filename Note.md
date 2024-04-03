@@ -57,3 +57,4 @@
 # End points: The URI/ URL where api/service can be accessed by a client application.
 
 
+#  A token refers to the smallest individual units of a program. Such as keywords, identifiers, operators, literals, and punctuation.
