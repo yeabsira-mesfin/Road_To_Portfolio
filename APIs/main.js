@@ -12,7 +12,9 @@ function getTodos() {
     //     },
     // }).then(res => showOutput(res)).catch(err => console.error(err));
 
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5').then(res => showOutput(res)).catch(err => console.error(err));
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5',{timeout: 400}).
+    then(res => showOutput(res)).
+    catch(err => console.error(err));
 
   }
   
@@ -29,7 +31,8 @@ function getTodos() {
     axios.patch('https://jsonplaceholder.typicode.com/todos/1',{
       title: 'Updated Todo',
       completed: true
-  }).then(res => showOutput(res)).catch(err => console.error(err));
+  }).then(res => showOutput(res))
+  .catch(err => console.error(err));
 
   }
   
@@ -78,7 +81,11 @@ function getTodos() {
   
   // ERROR HANDLING
   function errorHandling() {
-    axios.get('https://jsonplaceholder.typicode.com/todoss')
+    axios.get('https://jsonplaceholder.typicode.com/todoss',{
+      validateStatus: function(status){
+        return status < 500;
+      }
+    })
     .then(res => showOutput(res))
     .catch(err => {
       // Server responsed with a status other than 200
@@ -123,7 +130,7 @@ function getTodos() {
   const axiosInstance = axios.create({
     baseURL:'https://jsonplaceholder.typicode.com'
   });
-  axiosInstance.get('/comments').then(res => showOutput(res))
+  // axiosInstance.get('/comments').then(res => showOutput(res))
   
   // Show output in browser
   function showOutput(res) {
