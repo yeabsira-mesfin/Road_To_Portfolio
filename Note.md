@@ -58,3 +58,10 @@
 
 
 #  A token refers to the smallest individual units of a program. Such as keywords, identifiers, operators, literals, and punctuation.
+
+
+# PORT refers to a virtual communication endpoint between different processes or services running on a computer. Ports are used to facilitate communication between these processes over a network.
+
+# Ports are identified by numbers, ranging from 0 to 65535. Ports from 0 to 1023 are reserved for well-known services, such as HTTP (port 80) and HTTPS (port 443), while ports from 1024 to 49151 are registered for specific purposes by the Internet Assigned Numbers Authority (IANA). Ports from 49152 to 65535 are available for dynamic or private use
+
+# CRUD (create, read, update and delete.)
