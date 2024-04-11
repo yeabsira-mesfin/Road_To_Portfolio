@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const username = encodeURIComponent('Yeab12');
-const password = encodeURIComponent('Mich@el$12');
+const password = encodeURIComponent('user123');
 const uri = `mongodb+srv://${username}:${password}@portfoliocluster0.ljdx1gf.mongodb.net/MernApp?retryWrites=true&w=majority&appName=PortfolioCluster0`;
 
 const connectDB = async () => {
