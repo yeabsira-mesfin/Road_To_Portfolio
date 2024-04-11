@@ -37,7 +37,7 @@ const updateGoal = asyncHandler ( async (req,res) => {
     }
     const updateGoal = await Goal.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
-    })
+    });
     res.status(200).json({updateGoal});
 })
 // @desc Update goals
