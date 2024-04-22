@@ -5,7 +5,7 @@
 # When an information is sent to the server our computer's IP address will be added to the routers IP address and it will reach the destination, then when the information comes back from the internet the IP address is unfolded to the IP addresses it held when it came first.
 
 
-# HTTP (Hyper text transfer protocol) s(secure.)
+# HTTP (Hyper text transfer protocol) s(secure.) 
 
 
 # Three main methods are attached to HTTPS, GET (requests data), POST (submit data to the server), (PUT) update data which is already on the server, and DELETE(deletes our data.)
