@@ -65,3 +65,18 @@
 # Ports are identified by numbers, ranging from 0 to 65535. Ports from 0 to 1023 are reserved for well-known services, such as HTTP (port 80) and HTTPS (port 443), while ports from 1024 to 49151 are registered for specific purposes by the Internet Assigned Numbers Authority (IANA). Ports from 49152 to 65535 are available for dynamic or private use
 
 # CRUD (create, read, update and delete.)
+
+# React is a JS library/framework for building user interfaces.
+
+# Websites are looked in terms of components.
+
+# Props are attributes
+# States are datas that a component hold and manages internally.
+# Hooks allows us to use state and other features within functional components with out writing a class
+# useContext, useMemo & useCallback will be phased out in React 19.
+
+# SPA(Single Page App) - Loads a single HTML file and JS loads the entire UI including routes.
+# SSR(Server-Side Rendered) - Server sends rendered page to client. You can fetch data and load it as well.
+# SSG(Static Site Generation) - Meta framework generates static HTML files at build times. 
+
+# 
