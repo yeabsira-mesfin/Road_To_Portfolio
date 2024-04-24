@@ -9,7 +9,7 @@ const App = () => {
     <>
     <NavBar/>
    <Hero />
-   <EmployeeDevelopers/>
+    <EmployeeDevelopers/>
    <BrowseJobs/>
    <ViewMore/>
     </>
