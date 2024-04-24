@@ -67,7 +67,6 @@
 # CRUD (create, read, update and delete.)
 
 # React is a JS library/framework for building user interfaces.
-
 # Websites are looked in terms of components.
 
 # Props are attributes
@@ -79,4 +78,4 @@
 # SSR(Server-Side Rendered) - Server sends rendered page to client. You can fetch data and load it as well.
 # SSG(Static Site Generation) - Meta framework generates static HTML files at build times. 
 
-# 
+# <></> and empty tag in html is called fragment. 
