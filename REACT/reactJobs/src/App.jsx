@@ -10,7 +10,7 @@ const App = () => {
     <NavBar/>
    <Hero/>
    <EmployeeDevelopers/>
-  
+   <BrowseJobs/>
     </>
   )
 }
