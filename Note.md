@@ -68,7 +68,6 @@
 
 # React is a JS library/framework for building user interfaces.
 # Websites are looked in terms of components.
-
 # Props are attributes
 # States are datas that a component hold and manages internally.
 # Hooks allows us to use state and other features within functional components with out writing a class
