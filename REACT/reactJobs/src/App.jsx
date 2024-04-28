@@ -3,21 +3,25 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import HomPage from './Pages/HomPage';
 import MainLayout from './Layouts/MainLayout';
 import JobsPage from './Pages/JobsPage';
-import JobPage from './Pages/JobPage';
-import AddJob from './Pages/AddJob';
+import JobPage, { jobLoader } from './Pages/JobPage';
+import AddJobPage from './Pages/AddJobPage';
 import NotFoundPage from './Pages/NotFoundPage';
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<MainLayout/>}>
-      <Route path='/' element={<HomPage/>}/>
-      <Route path='/jobs' element={<JobsPage/>}/>
-      <Route path='/jobs/:id' element={<JobPage/>}/>
-      <Route path='/addjobs' element={<AddJob/>}/>
-      <Route path='*' element={<NotFoundPage/>}/>
-    </Route>
-)
-);
+
 const App = () => {
+  const addJob = (newJob) => {
+    console.log(newJob)
+  }
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path='/' element={<MainLayout/>}>
+        <Route path='/' element={<HomPage/>}/>
+        <Route path='/jobs' element={<JobsPage/>}/>
+        <Route path='/jobs/:id' element={<JobPage />} loader = {jobLoader}/>
+        <Route path='/addjobs' element={<AddJobPage/>} addJobSubmit={addJob}/>
+        <Route path='*' element={<NotFoundPage/>}/>
+      </Route>
+  )
+  );
 
   return <RouterProvider router={router}/>
 }
