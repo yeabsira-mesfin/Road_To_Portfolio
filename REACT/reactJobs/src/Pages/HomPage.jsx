@@ -8,7 +8,7 @@ const HomPage = () => {
     <>
     <Hero></Hero>
     <EmployeeDevelopers></EmployeeDevelopers>
-    <BrowseJobs></BrowseJobs>
+    <BrowseJobs isHome ={true}></BrowseJobs>
     <ViewMore></ViewMore>
     </>
   )
