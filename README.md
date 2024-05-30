@@ -33,7 +33,7 @@
 - [HTTP Status Codes](https://httpstatuses.com/)
 - [Understanding JSON](https://www.digitalocean.com/community/tutorials/understanding-json)
 
-### Sprint 5 - Your backend API (Week Five)
+### Sprint 5 - Your backend API (Week Five) 
 - LR5.1 - [Express + Node + MongoDB + Mongoose Crash course](https://www.youtube.com/watch?v=-0exw-9YJBo)
 #### Additional Resources
 - [Express.js documentation](https://expressjs.com/)
