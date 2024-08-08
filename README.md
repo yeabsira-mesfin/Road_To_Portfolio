@@ -1,5 +1,5 @@
 # RoadToPortfolioWebsite 
-# I will be using the tools that will be used in this repository to build my own portfolio website.
+
 ### Sprint 1 - Take off (Week One)
 - LR0.1 - [Internet Basics](https://www.youtube.com/watch?v=7_LPdttKXPc)
 - LR0.1 - [HTTP Crash Course](https://www.youtube.com/watch?v=iYM2zFP3Zn0)
